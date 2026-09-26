@@ -1,0 +1,14 @@
+{
+  "name": "ormprisma_aula01",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "devDependencies": {
+    "prisma": "6.19.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3"
+  }
+}
