@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "5a325dbc-a30d-4f6a-98e0-07e53b26468c",
+    "name": "DevBooks API - Aula 5",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53404844",
+    "_collection_link": "https://go.postman.co/collection/53404844-5a325dbc-a30d-4f6a-98e0-07e53b26468c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar Livro + Autor",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Autor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Franz Kafka\",\r\n  \"biography\": \"Escritor de língua alemã, autor de A Metamorfose.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/authors",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "authors"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Livro",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/d71e3f26-6b83-48aa-9914-811b497c9089",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books",
+            "d71e3f26-6b83-48aa-9914-811b497c9089"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Livro",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"O Processo\",\r\n  \"release_year\": 1925,\r\n  \"author_id\": \"4ca38797-0613-48e8-86c1-49dc3ac36140\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/d71e3f26-6b83-48aa-9914-811b497c9089",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books",
+            "d71e3f26-6b83-48aa-9914-811b497c9089"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Livros + Autor",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Livro",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"A Metamorfose\",\r\n  \"release_year\": 1915,\r\n  \"author_id\": \"4ca38797-0613-48e8-86c1-49dc3ac36140\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
